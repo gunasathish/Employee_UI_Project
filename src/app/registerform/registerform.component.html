@@ -1,0 +1,151 @@
+<div class="container register_container mt-5">
+    <div class="card">
+      <h5 class="card-header text-center">Registration Form</h5>
+      <div class="card-body">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <!-- First Row -->
+          <div class="row">
+            <!-- First Name -->
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input
+                id="firstName"
+                type="text"
+                formControlName="firstName"
+                class="form-control"
+              
+              />
+            </div>
+  
+            <!-- Last Name -->
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input
+                id="lastName"
+                type="text"
+                formControlName="lastName"
+                class="form-control"
+                
+              />
+            </div>
+          </div>
+  
+          <!-- Email -->
+           <div class="row">
+            <div class="col-md-6">
+                <label for="email">Email Id</label>
+                <input
+                  id="email"
+                  type="text"
+                  formControlName="email"
+                  class="form-control"
+                 
+                />
+              </div>
+               <!-- password -->
+              <div class="col-md-6">
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  type="text"
+                  formControlName="password"
+                  class="form-control"
+               
+                />
+              </div>
+
+           </div>
+
+
+
+                     <!-- User gender -->
+                     <div class="row">
+                        <div class="col-md-6">
+                            <label for="gender">User Gender</label>
+                            <input
+                              id="gender"
+                              type="text"
+                              formControlName="gender"
+                              class="form-control"
+                              
+                            />
+                          </div>
+                              <!-- Contact Me -->
+                          <div class="col-md-6">
+                            <label for="contact">Contact Me</label>
+                            <input
+                              id="phonenum"
+                              type="text"
+                              formControlName="phonenum"
+                              class="form-control"
+                              
+                            />
+                          </div>
+            
+                       </div>
+                      <!-- Age -->
+           <div class="row">
+            <div class="col-md-6">
+                <label for="age">Age</label>
+                <input
+                  id="age"
+                  type="text"
+                  formControlName="age"
+                  class="form-control"
+                 
+                />
+              </div>
+               <!-- Street-->
+              <div class="col-md-6">
+                <label for="street">Street</label>
+                <input
+                  id="street"
+                  type="text"
+                  formControlName="street"
+                  class="form-control"
+                 
+                />
+              </div>
+
+           </div>
+         
+
+
+                     <!-- City -->
+                     <div class="row">
+                        <div class="col-md-6">
+                            <label for="city">City</label>
+                            <input
+                              id="city"
+                              type="text"
+                              formControlName="city"
+                              class="form-control"
+                            
+                            />
+                          </div>
+                           <!-- Pincode-->
+                          <div class="col-md-6">
+                            <label for="pincode">Pincode</label>
+                            <input
+                              id="pincode"
+                              type="text"
+                              formControlName="Pincode"
+                              class="form-control"
+                           
+                            />
+                          </div>
+            
+                       </div>
+                     
+         
+  
+          <!-- Action Buttons -->
+          <div class="text-center">
+            <button class="btn btn-primary mr-1" type="submit">Register</button>
+            <button class="btn btn-secondary" type="reset">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
